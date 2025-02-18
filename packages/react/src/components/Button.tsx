@@ -29,7 +29,7 @@ export const Button = styled('button', {
   },
 
   '&:focus': {
-    boxShadow: '0 0 0 2px $colors$white',
+    boxShadow: '0 0 0 2px $colors$blueDark',
   },
 
   variants: {
