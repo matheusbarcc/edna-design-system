@@ -21,7 +21,7 @@ export const CheckboxContainer = styled(Checkbox.Root, {
   },
 
   '&:focus': {
-    boxShadow: '0 0 0 2px $colors$darkBlue',
+    boxShadow: '0 0 0 2px $colors$cornsilk100',
   },
 })
 
