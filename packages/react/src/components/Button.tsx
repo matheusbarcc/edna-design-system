@@ -5,12 +5,12 @@ export const Button = styled('button', {
   all: 'unset',
   borderRadius: '$sm',
   fontSize: '$sm',
-  fontWeight: '$medium',
+  fontWeight: '$regular',
   fontFamily: '$default',
   textAlign: 'center',
-  minWidth: 120,
+  minWidth: 56,
   boxSizing: 'border-box',
-  padding: '0 $4',
+  padding: '$4 $4',
 
   display: 'flex',
   alignItems: 'center',
@@ -29,48 +29,50 @@ export const Button = styled('button', {
   },
 
   '&:focus': {
-    boxShadow: '0 0 0 2px $colors$gray100',
+    boxShadow: '0 0 0 2px $colors$white',
   },
 
   variants: {
     variant: {
       primary: {
         color: '$white',
-        background: '$blueDark',
+        background: '$cornsilk100',
+        border: '2px solid $cornsilk500',
 
         '&:not(:disabled):hover': {
-          background: '$blueDark',
+          background: '$cornsilk200',
+          transition: 'background 200ms',
         },
 
         '&:disabled': {
-          backgroundColor: '$blueDark',
+          opacity: '.5',
         },
       },
 
       secondary: {
-        color: '$blueDark',
-        border: '2px solid $blueDark',
+        color: '$cornsilk100',
+        background: '$cornsilk500',
 
         '&:not(:disabled):hover': {
-          background: '$blueDark',
+          background: '$cornsilk400',
           color: '$white',
+          transition: 'background 200ms, color 200ms',
         },
 
         '&:disabled': {
-          color: '$gray200',
-          borderColor: '$gray200',
+          opacity: '.5',
         },
       },
 
       tertiary: {
-        color: '$gray100',
+        color: '$cornsilk100',
 
         '&:not(:disabled):hover': {
-          color: '$white',
+          color: '$cornsilk300',
         },
 
         '&:disabled': {
-          color: '$gray600',
+          opacity: '.5',
         },
       },
     },

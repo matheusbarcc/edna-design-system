@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Button, ButtonProps } from '@edna-ui/react'
-import { ArrowRight } from 'phosphor-react'
+import { ArrowsClockwise } from 'phosphor-react'
 
 export default {
   title: 'Form/Button',
@@ -61,8 +61,8 @@ export const WithIcon: StoryObj<ButtonProps> = {
   args: {
     children: (
       <>
-        Próximo passo
-        <ArrowRight weight="bold" />
+        <ArrowsClockwise weight="bold" />
+        Atualizar endereço
       </>
     ),
   },
