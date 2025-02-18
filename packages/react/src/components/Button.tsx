@@ -29,18 +29,18 @@ export const Button = styled('button', {
   },
 
   '&:focus': {
-    boxShadow: '0 0 0 2px $colors$cornsilk100',
+    boxShadow: '0 0 0 2px $colors$base100',
   },
 
   variants: {
     variant: {
       primary: {
         color: '$white',
-        background: '$cornsilk100',
-        border: '2px solid $cornsilk500',
+        background: '$base100',
+        border: '2px solid $base500',
 
         '&:not(:disabled):hover': {
-          background: '$cornsilk200',
+          background: '$base200',
           transition: 'background 200ms',
         },
 
@@ -50,11 +50,11 @@ export const Button = styled('button', {
       },
 
       secondary: {
-        color: '$cornsilk100',
-        background: '$cornsilk500',
+        color: '$base100',
+        background: '$base500',
 
         '&:not(:disabled):hover': {
-          background: '$cornsilk400',
+          background: '$base400',
           color: '$white',
           transition: 'background 200ms, color 200ms',
         },
@@ -65,10 +65,10 @@ export const Button = styled('button', {
       },
 
       tertiary: {
-        color: '$cornsilk100',
+        color: '$base100',
 
         '&:not(:disabled):hover': {
-          color: '$cornsilk300',
+          color: '$base300',
         },
 
         '&:disabled': {

@@ -12,7 +12,7 @@ export default {
           as="label"
           css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
         >
-          <Text size="sm">Email address</Text>
+          <Text size="sm">Price</Text>
           {Story()}
         </Box>
       )
@@ -22,14 +22,23 @@ export default {
 
 export const Primary: StoryObj<TextInputProps> = {
   args: {
-    placeholder: 'Type your name',
+    placeholder: 'Type the store name',
   },
 }
 
 export const WithPrefix: StoryObj<TextInputProps> = {
   args: {
-    prefix: 'cal.com/',
-    placeholder: 'your-username',
+    prefix: 'R$',
+    placeholder: '00,00',
+    css: { width: '201px' },
+  },
+}
+
+export const WithSuffix: StoryObj<TextInputProps> = {
+  args: {
+    suffix: 'cm',
+    placeholder: '00,00',
+    css: { width: '201px' },
   },
 }
 
