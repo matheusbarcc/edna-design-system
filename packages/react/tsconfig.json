@@ -1,0 +1,4 @@
+{
+  "extends": "@edna-ui/ts-config/react.json",
+  "include": ["src"]
+}

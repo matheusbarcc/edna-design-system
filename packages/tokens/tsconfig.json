@@ -1,0 +1,4 @@
+{
+  "extends": "@edna-ui/ts-config/base.json",
+  "include": ["src"]
+}
