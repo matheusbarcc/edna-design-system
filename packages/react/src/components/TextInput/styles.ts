@@ -1,10 +1,10 @@
 import { styled } from '../../styles'
 
 export const TextInputContainer = styled('div', {
-  backgroundColor: '$base600',
+  backgroundColor: '$base700',
   borderRadius: '$sm',
   boxSizing: 'border-box',
-  border: '2px solid $base500',
+  border: '1px solid $base500',
   display: 'flex',
   alignItems: 'center',
 
@@ -27,8 +27,8 @@ export const Prefix = styled('span', {
   fontSize: '$sm',
   color: '$base400',
   fontWeight: 'regular',
-  padding: '$4',
-  borderRight: '2px solid $base500',
+  padding: '$3 $4',
+  borderRight: '1px solid $base500',
 })
 
 export const Suffix = styled('span', {
@@ -36,8 +36,8 @@ export const Suffix = styled('span', {
   fontSize: '$sm',
   color: '$base400',
   fontWeight: 'regular',
-  padding: '$4',
-  borderLeft: '2px solid $base500',
+  padding: '$3 $4',
+  borderLeft: '1px solid $base500',
 })
 
 export const Input = styled('input', {
@@ -48,7 +48,7 @@ export const Input = styled('input', {
   background: 'transparent',
   border: 0,
   width: '100%',
-  padding: '$4',
+  padding: '$3 $4',
 
   '&:focus': {
     outline: 0,

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Text, TextInput, TextInputProps } from '@edna-ui/react'
+import { Card, Text, TextInput, TextInputProps } from '@edna-ui/react'
 
 export default {
   title: 'Form/Text Input',
@@ -8,10 +8,10 @@ export default {
   decorators: [
     (Story) => {
       return (
-        <>
+        <Card css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}>
           <Text size="sm">Price</Text>
           {Story()}
-        </>
+        </Card>
       )
     },
   ],

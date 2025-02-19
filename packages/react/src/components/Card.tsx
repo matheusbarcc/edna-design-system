@@ -5,7 +5,7 @@ export const Card = styled('div', {
   padding: '$6',
   borderRadius: '$md',
   backgroundColor: '$base600',
-  border: '2px solid $base500',
+  border: '1px solid $base500',
 })
 
 export interface CardProps extends ComponentProps<typeof Card> {
