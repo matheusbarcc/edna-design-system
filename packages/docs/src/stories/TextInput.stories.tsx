@@ -1,20 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, Text, TextInput, TextInputProps } from '@edna-ui/react'
+import { Text, TextInput, TextInputProps } from '@edna-ui/react'
 
 export default {
-  title: 'Form/TextInput',
+  title: 'Form/Text Input',
   component: TextInput,
   args: {},
   decorators: [
     (Story) => {
       return (
-        <Box
-          as="label"
-          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
-        >
+        <>
           <Text size="sm">Price</Text>
           {Story()}
-        </Box>
+        </>
       )
     },
   ],

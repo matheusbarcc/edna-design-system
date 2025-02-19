@@ -3,7 +3,7 @@ import { styled } from '../styles'
 
 export const Button = styled('button', {
   all: 'unset',
-  borderRadius: '$sm',
+  borderRadius: '$md',
   fontSize: '$sm',
   fontWeight: '$regular',
   fontFamily: '$default',
@@ -29,19 +29,19 @@ export const Button = styled('button', {
   },
 
   '&:focus': {
-    boxShadow: '0 0 0 2px $colors$base100',
+    boxShadow: '0 0 0 2px $colors$black',
   },
+
+  transition: 'background 200ms, color 200ms',
 
   variants: {
     variant: {
       primary: {
         color: '$white',
         background: '$base100',
-        border: '2px solid $base500',
 
         '&:not(:disabled):hover': {
           background: '$base200',
-          transition: 'background 200ms',
         },
 
         '&:disabled': {
@@ -56,7 +56,6 @@ export const Button = styled('button', {
         '&:not(:disabled):hover': {
           background: '$base400',
           color: '$white',
-          transition: 'background 200ms, color 200ms',
         },
 
         '&:disabled': {
@@ -81,9 +80,8 @@ export const Button = styled('button', {
       sm: {
         height: 38,
       },
-
       md: {
-        height: 46,
+        height: 53,
       },
     },
   },
