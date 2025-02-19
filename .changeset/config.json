@@ -7,5 +7,5 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@callendar-ui/docs"]
+  "ignore": ["@edna-ui/docs"]
 }
