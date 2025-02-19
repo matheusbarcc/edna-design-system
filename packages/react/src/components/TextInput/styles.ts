@@ -40,6 +40,15 @@ export const Suffix = styled('span', {
   borderLeft: '1px solid $base500',
 })
 
+export const ShowPasswordButton = styled('button', {
+  all: 'unset',
+  display: 'flex',
+  flexDirection: 'center',
+  color: '$base400',
+  marginRight: '$4',
+  cursor: 'pointer',
+})
+
 export const Input = styled('input', {
   fontFamily: '$default',
   fontSize: '$sm',

@@ -8,8 +8,17 @@ export default {
   decorators: [
     (Story) => {
       return (
-        <Card css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}>
-          <Text size="sm">Price</Text>
+        <Card
+          css={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '$1',
+            width: '320px',
+          }}
+        >
+          <Text size="sm" as="strong" css={{ color: '$base300' }}>
+            Text
+          </Text>
           {Story()}
         </Card>
       )
@@ -20,6 +29,13 @@ export default {
 export const Primary: StoryObj<TextInputProps> = {
   args: {
     placeholder: 'Type the store name',
+  },
+}
+
+export const Password: StoryObj<TextInputProps> = {
+  args: {
+    placeholder: 'Type your password',
+    isPassword: true,
   },
 }
 

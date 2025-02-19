@@ -10,15 +10,15 @@ export const colors = {
   base600: '#F6EDCB',
   base700: '#FFF6D8',
 
-  blueDark: '#66ABA5',
-  blueMid: '#9AC8C4',
-  blueLight: '#CCEFEC',
+  blue400: '#66ABA5',
+  blue500: '#9AC8C4',
+  blue600: '#CCEFEC',
 
-  orangeDark: '#F1B04E',
-  orangeMid: '#EFC482',
-  orangeLight: '#EED8B6',
+  orange400: '#F1B04E',
+  orange500: '#EFC482',
+  orange600: '#EED8B6',
 
-  redDark: '#E26B5A',
-  redMid: '#E99A8F',
-  redLight: '#EFBFB8',
+  red400: '#E26B5A',
+  red500: '#E99A8F',
+  red600: '#EFBFB8',
 }
