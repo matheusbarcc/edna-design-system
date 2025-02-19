@@ -11,21 +11,7 @@ export default {
   },
   argTypes: {
     size: {
-      options: [
-        'xxs',
-        'xs',
-        'sm',
-        'md',
-        'lg',
-        'xl',
-        '2xl',
-        '4xl',
-        '5xl',
-        '6xl',
-        '7xl',
-        '8xl',
-        '9xl',
-      ],
+      options: ['xxs', 'xs', 'sm', 'md', 'lg'],
       control: {
         type: 'inline-radio',
       },
