@@ -4,6 +4,8 @@ export * from './components/SpecialTitle'
 export * from './components/Title'
 export * from './components/Button'
 export * from './components/TextInput'
+export * from './components/SelectInput'
+export * from './components/SelectItem'
 export * from './components/TextArea'
 export * from './components/Checkbox'
 
