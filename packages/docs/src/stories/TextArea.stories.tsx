@@ -10,7 +10,12 @@ export default {
       return (
         <Card
           as="label"
-          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
+          css={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '$2',
+            width: '320px',
+          }}
         >
           <Text size="sm">Observations</Text>
           {Story()}
