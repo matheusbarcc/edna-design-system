@@ -1,5 +1,11 @@
 # @edna-ui/react
 
+## 1.0.4
+
+### Patch Changes
+
+- Add 100% width to text area container
+
 ## 1.0.3
 
 ### Patch Changes
