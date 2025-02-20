@@ -1,6 +1,6 @@
 {
   "name": "@edna-ui/react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -11,7 +11,7 @@
     "lint": "eslint src/**/*.ts* --fix"
   },
   "keywords": [],
-  "author": "",
+  "author": "Matheus Barcelos Conceição",
   "license": "MIT",
   "devDependencies": {
     "@edna-ui/eslint-config": "*",

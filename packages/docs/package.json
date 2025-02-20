@@ -10,7 +10,7 @@
     "build": "build-storybook"
   },
   "keywords": [],
-  "author": "",
+  "author": "Matheus Barcelos Conceição",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.19.3",
