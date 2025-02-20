@@ -7,6 +7,7 @@ export const TextInputContainer = styled('div', {
   border: '1px solid $base500',
   display: 'flex',
   alignItems: 'center',
+  width: '100%',
 
   '&:has(span) input': {
     textAlign: 'center',

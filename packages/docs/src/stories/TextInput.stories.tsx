@@ -11,9 +11,9 @@ export default {
         <Card
           css={{
             display: 'flex',
-            flexDirection: 'column',
+            // flexDirection: 'column',
             gap: '$1',
-            width: '320px',
+            // width: '320px',
           }}
         >
           <Text size="sm" as="strong" css={{ color: '$base300' }}>
