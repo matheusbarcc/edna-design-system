@@ -14,10 +14,11 @@ export default {
             display: 'flex',
             flexDirection: 'column',
             gap: '$2',
-            width: '320px',
           }}
         >
-          <Text size="sm">Observations</Text>
+          <Text size="sm" as="strong" css={{ color: '$base300' }}>
+            Observations
+          </Text>
           {Story()}
         </Card>
       )

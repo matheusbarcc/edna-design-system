@@ -13,7 +13,6 @@ export default {
             display: 'flex',
             flexDirection: 'column',
             gap: '$1',
-            width: '320px',
           }}
         >
           <Text size="sm" as="strong" css={{ color: '$base300' }}>
