@@ -16,12 +16,10 @@ export default {
       return (
         <>
           <Card
-            as="label"
             css={{
               display: 'flex',
               flexDirection: 'column',
               gap: '$2',
-              width: '250px',
             }}
           >
             <Text size="sm" as="strong" css={{ color: '$base300' }}>

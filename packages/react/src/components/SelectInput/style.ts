@@ -11,6 +11,7 @@ export const SelectInputTrigger = styled(SelectPrimitive.Trigger, {
   border: '1px solid $base500',
   padding: '$3 $4',
   userSelect: 'none',
+  width: '100%',
 
   fontSize: '$sm',
 

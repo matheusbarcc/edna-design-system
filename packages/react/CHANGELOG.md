@@ -1,5 +1,11 @@
 # @edna-ui/react
 
+## 1.0.6
+
+### Patch Changes
+
+- Add 100% width to select input component
+
 ## 1.0.5
 
 ### Patch Changes
