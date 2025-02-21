@@ -20,30 +20,32 @@ export const SelectInputTrigger = styled(SelectPrimitive.Trigger, {
 
   cursor: 'pointer',
 
-  '&:has(input:focus)': {
-    boxShadow: '0 0 0 2px $colors$black',
-  },
-
-  '&:has(input:disabled)': {
+  '&:disabled': {
     opacity: 0.5,
     cursor: 'not-allowed',
   },
+})
+
+export const SelectInputValue = styled(SelectPrimitive.Value, {
+  color: '$base100',
 
   '&::placeholder': {
-    color: '$base300',
+    color: '$base500',
   },
 })
 
-export const SelectInputContent = styled(SelectPrimitive.Content, {
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '$2',
-
-  fontFamily: '$default',
+export const SelectInputIcon = styled(SelectPrimitive.Icon, {
   color: '$base100',
+})
+
+export const SelectInputContent = styled(SelectPrimitive.Content, {
   background: '$base700',
   border: '1px solid $base500',
   borderRadius: '$sm',
+  overflow: 'hidden',
+  width: 'var(--radix-select-trigger-width)',
+})
 
-  marginTop: '$20',
+export const SelectInputViewport = styled(SelectPrimitive.Viewport, {
+  padding: '$1',
 })

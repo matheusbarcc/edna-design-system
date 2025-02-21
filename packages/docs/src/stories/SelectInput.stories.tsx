@@ -14,20 +14,22 @@ export default {
   decorators: [
     (Story) => {
       return (
-        <Card
-          as="label"
-          css={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '$2',
-            width: '250px',
-          }}
-        >
-          <Text size="sm" as="strong" css={{ color: '$base300' }}>
-            Category
-          </Text>
-          {Story()}
-        </Card>
+        <>
+          <Card
+            as="label"
+            css={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '$2',
+              width: '250px',
+            }}
+          >
+            <Text size="sm" as="strong" css={{ color: '$base300' }}>
+              Category
+            </Text>
+            {Story()}
+          </Card>
+        </>
       )
     },
   ],
@@ -39,7 +41,7 @@ export const Primary: StoryObj<SelectInputProps> = {
     children: Array.from({ length: 3 }).map((_, i) => {
       return (
         <SelectItem key={i} value={i.toString()}>
-          {'Category ' + (i + 1)}
+          {'category ' + (i + 1)}
         </SelectItem>
       )
     }),

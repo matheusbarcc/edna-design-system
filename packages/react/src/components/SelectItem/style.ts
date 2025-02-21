@@ -1,12 +1,19 @@
 import * as SelectPrimitive from '@radix-ui/react-select'
-import { styled } from '@stitches/react'
+import { styled } from '../../styles'
 
 export const Item = styled(SelectPrimitive.Item, {
-  padding: '$2 $4',
+  fontFamily: '$default',
+  padding: '$2 $3',
   fontSize: '$sm',
   cursor: 'pointer',
+  borderRadius: '$xs',
 
-  '&:hover': {
-    background: '$base500',
+  '&[data-highlighted]': {
+    backgroundColor: '$base500',
+    outline: 'none',
   },
+})
+
+export const ItemText = styled(SelectPrimitive.ItemText, {
+  color: '$base100',
 })

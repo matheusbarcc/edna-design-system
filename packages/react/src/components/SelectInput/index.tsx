@@ -1,11 +1,17 @@
 import { ComponentProps, ElementRef, forwardRef } from 'react'
 import { CaretDown } from 'phosphor-react'
 import * as Select from '@radix-ui/react-select'
-import { SelectInputContent, SelectInputTrigger } from './style'
+import {
+  SelectInputContent,
+  SelectInputIcon,
+  SelectInputTrigger,
+  SelectInputValue,
+  SelectInputViewport,
+} from './style'
 
 export interface SelectInputProps extends ComponentProps<typeof Select.Root> {
   css?: any
-  placeholder?: string
+  placeholder?: any
 }
 
 export const SelectInput = forwardRef<
@@ -15,13 +21,19 @@ export const SelectInput = forwardRef<
   return (
     <Select.Root {...props}>
       <SelectInputTrigger ref={ref} css={css}>
-        <Select.Value placeholder={placeholder} />
-        <Select.Icon>
+        <SelectInputValue placeholder={placeholder} />
+        <SelectInputIcon>
           <CaretDown size={15} />
-        </Select.Icon>
+        </SelectInputIcon>
       </SelectInputTrigger>
 
-      <SelectInputContent>{children}</SelectInputContent>
+      <Select.Portal>
+        <SelectInputContent position="popper" side="bottom" sideOffset={4}>
+          <SelectInputViewport>
+            <Select.Group>{children}</Select.Group>
+          </SelectInputViewport>
+        </SelectInputContent>
+      </Select.Portal>
     </Select.Root>
   )
 })
