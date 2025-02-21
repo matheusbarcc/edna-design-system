@@ -5,7 +5,6 @@ export const Text = styled('p', {
   fontFamily: '$default',
   lineHeight: '$base',
   margin: 0,
-  color: '$base100',
 
   variants: {
     size: {
@@ -15,10 +14,15 @@ export const Text = styled('p', {
       md: { fontSize: '$md' },
       lg: { fontSize: '$xl' },
     },
+    type: {
+      default: { color: '$base100' },
+      label: { color: '$base300', marginBottom: '$1', fontWeight: '$bold' },
+    },
   },
 
   defaultVariants: {
     size: 'md',
+    type: 'default',
   },
 })
 

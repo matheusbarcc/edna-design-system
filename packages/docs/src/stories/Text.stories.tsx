@@ -21,6 +21,14 @@ export default {
 
 export const Primary: StoryObj<TextProps> = {}
 
+export const Label: StoryObj<TextProps> = {
+  args: {
+    type: 'label',
+    size: 'sm',
+    children: 'Text',
+  },
+}
+
 export const CustomTag: StoryObj<TextProps> = {
   args: {
     children: 'Strong text',

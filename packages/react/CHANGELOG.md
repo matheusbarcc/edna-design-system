@@ -1,5 +1,11 @@
 # @edna-ui/react
 
+## 1.0.7
+
+### Patch Changes
+
+- add label variant to text component
+
 ## 1.0.6
 
 ### Patch Changes
